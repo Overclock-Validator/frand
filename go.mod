@@ -1,4 +1,4 @@
-module lukechampine.com/frand
+module github.com/Overclock-Validator/frand
 
 go 1.12
 

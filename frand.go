@@ -322,3 +322,5 @@ func (s *Source) Uint64() uint64 {
 
 // NewSource returns a source for use with the math/rand package.
 func NewSource() *Source { return &Source{rng: New()} }
+
+func NewSourceWithSeed(seed []byte) *Source { return &Source{rng: NewCustom(seed, 1024, 20)} }
